@@ -1,8 +1,5 @@
 # versionator
 
-[![Build Status](https://travis-ci.org/davidlso/versionator.svg?branch=master)](https://travis-ci.org/davidlso/versionator)
-[![Built with](https://img.shields.io/badge/Built_with-Cookiecutter_Django_Rest-F7B633.svg)](https://github.com/agconti/cookiecutter-django-rest)
-
 Project focuses on managing firmware versioning.. Check out the project's [documentation](http://davidlso.github.io/versionator/).
 
 # Prerequisites
