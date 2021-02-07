@@ -1,14 +1,15 @@
 # versionator
 
-Project focuses on managing firmware versioning.. Check out the project's [documentation](http://davidlso.github.io/versionator/).
+Project focuses on managing firmware versioning.. Check out the project's [documentation](https://versionator-api.herokuapp.com/).
 
 # Prerequisites
 
-- [Docker](https://docs.docker.com/docker-for-mac/install/)  
+- [Docker](https://docs.docker.com/docker-for-mac/install/)
 
 # Local Development
 
 Start the dev server for local development:
+
 ```bash
 docker-compose up
 ```
