@@ -12,7 +12,7 @@ from .validators import (
 
 
 def file_rename(instance, filename):
-    upload_to = 'firmmware'
+    upload_to = 'firmware'
     ext = filename.split('.')[-1]
     normalized_project_name = instance.normalized_project_name()
     normalized_version = instance.normalized_version()
@@ -21,7 +21,7 @@ def file_rename(instance, filename):
     return os.path.join(upload_to, filename)
 
 
-class Firmmware(models.Model):
+class Firmware(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     project_name = models.CharField(max_length=255)
     version = models.CharField(max_length=12, validators=[validate_version_format, validate_version_only_number])

@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from .models import Firmmware
+from .models import Firmware
 
 
-class FirmmwareSerializer(serializers.ModelSerializer):
+class FirmwareSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Firmmware
+        model = Firmware
         fields = ('id', 'project_name', 'version', 'compatible_card_name', 'file')

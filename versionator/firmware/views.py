@@ -2,8 +2,8 @@ from rest_framework import viewsets, mixins
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.parsers import FormParser, MultiPartParser
 
-from .serializers import FirmmwareSerializer
-from .models import Firmmware
+from .serializers import FirmwareSerializer
+from .models import Firmware
 
 
 class FirmwareViewSet(mixins.ListModelMixin,
@@ -12,7 +12,7 @@ class FirmwareViewSet(mixins.ListModelMixin,
                       mixins.CreateModelMixin,
                       viewsets.GenericViewSet):
 
-    queryset = Firmmware.objects.all()
-    serializer_class = FirmmwareSerializer
+    queryset = Firmware.objects.all()
+    serializer_class = FirmwareSerializer
     permission_classes = (IsAuthenticated,)
     parser_classes = (FormParser, MultiPartParser)
